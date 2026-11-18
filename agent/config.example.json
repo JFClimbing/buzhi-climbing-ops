@@ -1,0 +1,33 @@
+{
+  "_说明": "复制成 config.json 再改。app_id/app_secret 来自飞书自建应用；app_token/table_id 来自多维表格地址栏。",
+  "feishu": {
+    "app_id": "cli_xxxxxxxxxxxxxxxx",
+    "app_secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "app_token": "bascnxxxxxxxxxxxxxxxxxxxxxx",
+    "table_material": "tblxxxxxxxxxxxxxx",
+    "table_daily": "tblxxxxxxxxxxxxxx",
+    "base_url": "https://open.feishu.cn"
+  },
+  "source": {
+    "mode": "export",
+    "_mode说明": "export=后台导出文件（合规默认）；api=官方开放平台（拿到权限后启用）",
+    "inbox_dir": "data/inbox",
+    "failed_dir": "data/failed",
+    "snapshot_dir": "data/snapshots"
+  },
+  "job": {
+    "report_date_offset": 1,
+    "_offset说明": "1=汇总前一日（推荐，后台数据 T+1 才齐）；0=汇总当天",
+    "timezone": "Asia/Shanghai"
+  },
+  "accounts": {
+    "douyin": { "name": "不止攀岩", "handle": "zzhclimbing" },
+    "xiaohongshu": { "name": "不止攀岩", "handle": "" }
+  },
+  "manual_fields": {
+    "_说明": "平台拿不到的字段，走人工补录：可以手填 data/manual/YYYY-MM-DD.json，脚本会读进来",
+    "private_messages": null,
+    "consult_sources": [],
+    "signup_intents": null
+  }
+}

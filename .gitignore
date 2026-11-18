@@ -1,0 +1,21 @@
+# 登录态（等同账号密码，绝不提交）
+.auth-edge/
+.auth-xhs/
+.auth*/
+
+# 运行产物
+agent/data/
+agent/dryrun/
+agent/output/
+__pycache__/
+*.pyc
+*.log
+
+# 真实凭证
+config.json
+.github_token
+github_token.txt
+
+# 临时
+*.tmp
+~$*
